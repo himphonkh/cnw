@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning English - Thông tin</title>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="icon" href="../../img/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="view-profile.css">
+    <script type="module" src="view-profile.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="../../course-list/courses-list.html" class="title">
+            Learning English
+        </a>
+        <div class="menu">
+            <ul>
+                <li id="course"><a href="../../course-list/courses-list.html">Bài học</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="#contact">Tương tác</a></li>
+                <li><a href="#about">Liên quan</a></li>
+            </ul>
+        </div>
+        <div class="user">
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <img id="avatar" src="../../img/avatar.png" class="avatar">
+                    <a id="username" href="../view-profile/view-profile.html">User</a>
+                </div>
+
+                <div class="dropdown-content">
+                    <a href="../view-profile/view-profile.html">Thông tin cá nhân</a>
+                    <a href="../../change-password/changepass.html">Thay đổi mật khẩu</a>
+                    <a style="cursor:pointer;" id="logout">Đăng xuất</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="profile">
+            <div class="image">
+                <input type="file" name="file" id="image" accept="image/*" />
+                <div id="preview">
+                    <div id="avatar-image"></div>
+                    <button class="upload-button" aria-labelledby="image" aria-describedby="image">
+                        <img src="../../img/pen.png">
+                    </button>
+                </div>
+                <button class="save-button" id="save">Lưu Avatar</button>
+            </div>
+            <div class="info">
+                <h2 id="name">Tên</h2>
+                <div><span id="slug" style="font-style: italic;"></span></div><br>
+                <div><span id="label">Email: </span><span id="email"></span><span><a href="../update-profile/update-profile.html"><img src="../../img/pen.png"></a></span></div><br>
+                <div><span id="label">Ngày tạo: </span><span id="date"></span></div>
+                <h3 style="text-align: center;">Các khóa học</h3>
+                <div class="course">
+                    <label>Cơ bản</label>
+                    <div class="progress">
+                        <div class="progress__bar"  id="basic"></div>
+                    </div>
+                </div>
+                <div class="course">
+                    <label>Trung bình</label>
+                    <div class="progress">
+                        <div class="progress__bar"  id="intermediate"></div>
+                    </div>
+                </div>
+                <div class="course">
+                    <label>Nâng cao</label>
+                    <div class="progress">
+                        <div class="progress__bar"  id="advanced"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="fb">Liên hệ: <a href="#">Facebook</a></span></div>
+        <div class="copyright">&copy; Group 17</div>
+    </div>
+</body>
+
+</html>
